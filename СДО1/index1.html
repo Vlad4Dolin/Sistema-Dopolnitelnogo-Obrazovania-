@@ -1,0 +1,86 @@
+<!DOCTYPE html>  
+<html lang="ru">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>IT Bridge Academy</title>  
+    <link rel="stylesheet" href="css/styles.css"> <!-- Подключение CSS файла -->
+    <script src="js/scripts.js" defer></script>
+</head>  
+<body>  
+    <header>  
+      <a href="index.html"><img src="images/logo.jpg" alt="Логотип" class="logo"></a>
+        <h1>Система дополнительного образования IT Bridge Academy</h1>  
+        <div class="auth-buttons">  
+            <button class="auth-button" id="loginBtn">ВХОД</button>  
+            <button class="auth-button" id="registerBtn">РЕГИСТРАЦИЯ</button>  
+        </div>  
+    </header> 
+    <div class="main-container"> 
+        <div class="sidebar">  
+            <div class="button-container">  
+                <button class="button" onclick="document.location='index1.html'">Курс</button>  
+                <button class="button" onclick="document.location='index1.html'">Блог</button>
+                <button class="button" onclick="document.location='index1.html'">Контакты</button> 
+            </div>  
+        </div>  
+        <div class="content"> <!-- Контент справа от сайдбара --> 
+          <h1>Контакты</h1> <!-- Текст "Контакты" -->
+          <p>
+            1. Елена Сидорова
+            Должность: Менеджер по программам дополнительного образования        
+            Телефон: +7 (123) 456-78-90 
+            Email: elena.sidorova@email.com
+            2. Александр Петров
+            Должность: Координатор учебных мероприятий 
+            Телефон: +7 (123) 456-78-91 
+            Email: alexander.petrov@email.com
+            3. Мария Иванова
+            Должность: Специалист по связям с общественностью  
+            Телефон: +7 (123) 456-78-92  
+            Email: maria.ivanova@email.com
+            4. Дмитрий Кузнецов
+            Должность: Методист по дополнительным программам  
+            Телефон: +7 (123) 456-78-93  
+            Email: dmitry.kuznetsov@email.com
+          </p>
+      </div>
+    </div>
+
+    <!-- Модальное окно входа -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeLogin">&times;</span>
+        <h2>Вход</h2>
+        <form>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="password">Пароль:</label><br>
+          <input type="password" id="password" name="password" required><br><br>
+          <input type="submit" value="Войти">
+        </form>
+      </div>
+    </div>
+
+    <!-- Модальное окно регистрации -->
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeRegister">&times;</span>
+        <h2>Регистрация</h2>
+        <form>
+          <label for="fullName">ФИО:</label><br>
+          <input type="text" id="fullName" name="fullName" required><br>
+          <label for="regEmail">Email:</label><br>
+          <input type="email" id="regEmail" name="regEmail" required><br>
+          <label for="regPassword">Пароль:</label><br>
+          <input type="password" id="regPassword" name="regPassword" required><br>
+          <label for="phone">Телефон:</label><br>
+          <input type="tel" id="phone" name="phone" required><br><br>
+          <input type="submit" value="Зарегистрироваться">
+        </form>
+      </div>
+    </div>
+
+    
+</body>  
+</html>
