@@ -19,8 +19,10 @@ header {
     margin-right: 10px;
     border-radius: 25px;
 } 
-h1 { 
-    margin: 0; 
+h2 { 
+    margin: 0;
+    font-size: 40px;
+
 } 
 .button-container { 
     display: flex; 
@@ -69,12 +71,15 @@ h1 {
         
 } 
 .content { 
-    flex: 1; /* Занимает оставшееся пространство */ 
-    padding: 10px;/* Отступы для контента */ 
+    padding-left: 10%;
+    min-width: 900%;
+    min-height: 700%;
     position: relative;
-    left: 950px;
-    
 }
+p {
+    font-size: 30px;
+}
+
  
 /* Стили для модального окна */
         .modal {
@@ -165,6 +170,10 @@ h1 {
         .auth-button:hover, input[type="submit"]:hover {
             background-color: #555; /* Цвет фона при наведении */
         }
+.contact {
+    width: 400px;
+   height: 400px;
+}
     
         
     
