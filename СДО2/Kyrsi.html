@@ -1,0 +1,73 @@
+<!DOCTYPE html>  
+<html lang="ru">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>IT Bridge Academy</title>  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Подключение CSS файла -->
+    <script src="js/scripts.js" defer></script>
+</head>  
+<body>  
+    <header>  
+      <a href="sdo.html"><img src="images/logo.jpg" alt="Логотип" class="logo"></a>
+        <h1>Система дополнительного образования IT Bridge Academy</h1>  
+        <div class="auth-buttons">  
+            <button class="auth-button" id="loginBtn">ВХОД</button>  
+            <button class="auth-button" id="registerBtn">РЕГИСТРАЦИЯ</button>  
+        </div>  
+    </header> 
+    <div class="main-container"> 
+        <div class="sidebar">  
+            <div class="button-container">  
+                <button class="button" onclick="document.location='kyrsi.html'">Курсы</button>  
+                <button class="button" onclick="document.location='blog.html'">Блог</button>
+                <button class="button" onclick="document.location='contact.html'">Контакты</button> 
+            </div>  
+        </div>  
+        <h2>Курсы</h2>
+
+    <!-- Модальное окно входа -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeLogin">&times;</span>
+        <h2>Вход</h2>
+        <form>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="password">Пароль:</label><br>
+          <input type="password" id="password" name="password" required><br><br>
+          <input type="submit" value="Войти">
+        </form>
+      </div>
+    </div>
+    <div class="gallery">
+      <a href="kyrsiinfo.html"><img src="images/photokyrsi.jpeg" alt="Image 1" class="single-image"></a>
+        <a href="kyrsiinfo.html"><img src="images/photokyrsi1.jpg" alt="Image 2" class="single-image"></a>
+          <a href="kyrsiinfo.html"><img src="images/photokyrsi2.png" alt="Image 3" class="single-image"></a>
+            <a href="kyrsiinfo.html"><img src="images/photokyrsi3.webp" alt="Image 4" class="single-image"></a>
+              <a href="kyrsiinfo.html"><img src="images/photokyrsi4.png" alt="Image 5" class="single-image"></a>
+                <a href="kyrsiinfo.html"><img src="images/photokyrsi5.png" alt="Image 6" class="single-image"></a>
+  </div>
+    <!-- Модальное окно регистрации -->
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeRegister">&times;</span>
+        <h2>Регистрация</h2>
+        <form>
+          <label for="fullName">ФИО:</label><br>
+          <input type="text" id="fullName" name="fullName" required><br>
+          <label for="regEmail">Email:</label><br>
+          <input type="email" id="regEmail" name="regEmail" required><br>
+          <label for="regPassword">Пароль:</label><br>
+          <input type="password" id="regPassword" name="regPassword" required><br>
+          <label for="phone">Телефон:</label><br>
+          <input type="tel" id="phone" name="phone" required><br><br>
+          <input type="submit" value="Зарегистрироваться">
+        </form>
+      </div>
+    </div>
+
+    
+</body>  
+</html>

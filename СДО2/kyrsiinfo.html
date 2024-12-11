@@ -1,0 +1,81 @@
+<!DOCTYPE html>  
+<html lang="ru">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>IT Bridge Academy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Подключение CSS файла -->
+    <script src="js/scripts.js" defer></script>
+</head>  
+<body>  
+    <header>  
+      <a href="sdo.html"><img src="images/logo.jpg" alt="Логотип" class="logo"></a>
+        <h1>Система дополнительного образования IT Bridge Academy</h1>  
+        <div class="auth-buttons">  
+            <button class="auth-button" id="loginBtn">ВХОД</button>  
+            <button class="auth-button" id="registerBtn">РЕГИСТРАЦИЯ</button>  
+        </div>  
+    </header> 
+    <div class="main-container"> 
+        <div class="sidebar">  
+            <div class="button-container">  
+                <button class="button" onclick="document.location='kyrsi.html'">Курсы</button>  
+                <button class="button" onclick="document.location='blog.html'">Блог</button>
+                <button class="button" onclick="document.location='contact.html'">Контакты</button> 
+            </div>  
+        </div>  
+        <div class="content"> 
+         <h2>Доступные курсы</h2> 
+         <p>1. Основы программирования: Изучите базовые концепции программирования на языке Python. Курс охватывает синтаксис, структуры данных и алгоритмы, что поможет вам построить прочный фундамент для дальнейшего изучения.</p>
+
+         <p>2. Веб-разработка: Узнайте, как создавать современные веб-сайты с использованием HTML, CSS и JavaScript. Курс включает проектирование пользовательского интерфейса и основы работы с серверными технологиями.</p>
+
+          <p>3. Машинное обучение: Погрузитесь в мир искусственного интеллекта и научитесь создавать модели машинного обучения с использованием Python и библиотек, таких как TensorFlow и Scikit-learn. Курс охватывает алгоритмы, этапы разработки и практические кейсы.</p>
+
+            <p>4. Кибербезопасность: Ознакомьтесь с основами защиты информации и методами предотвращения кибератак. Курс включает черные и белые методы тестирования на проникновение, а также практические занятия по настройке систем безопасности.</p>
+
+              <p>5. Данные и аналитика: Узнайте, как собирать, обрабатывать и анализировать данные с использованием SQL и Python. Курс посвящен методам извлечения данных, визуализации и интерпретации результатов для принятия обоснованных решений.</p>
+
+                <p>6. Мобильная разработка: Научитесь создавать приложения для мобильных устройств на платформах Android и iOS. Курс охватывает основы проектирования пользовательского интерфейса, работу с API и публикацию приложений в магазинах приложений.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно входа -->
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeLogin">&times;</span>
+        <h2>Вход</h2>
+        <form>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="password">Пароль:</label><br>
+          <input type="password" id="password" name="password" required><br><br>
+          <input type="submit" value="Войти">
+        </form>
+      </div>
+    </div>
+
+    <!-- Модальное окно регистрации -->
+    <div id="registerModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeRegister">&times;</span>
+        <h2>Регистрация</h2>
+        <form>
+          <label for="fullName">ФИО:</label><br>
+          <input type="text" id="fullName" name="fullName" required><br>
+          <label for="regEmail">Email:</label><br>
+          <input type="email" id="regEmail" name="regEmail" required><br>
+          <label for="regPassword">Пароль:</label><br>
+          <input type="password" id="regPassword" name="regPassword" required><br>
+          <label for="phone">Телефон:</label><br>
+          <input type="tel" id="phone" name="phone" required><br><br>
+          <input type="submit" value="Зарегистрироваться">
+        </form>
+      </div>
+    </div>
+
+    
+</body>  
+</html>
